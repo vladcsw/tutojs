@@ -2,23 +2,27 @@
 <html>
 <body>
 
-<div id="demo">
 <h2>The XMLHttpRequest Object</h2>
-<button type="button" onclick="loadDoc()">Change Content</button>
-</div>
+<h3>Start typing a name in the input field below:</h3>
+
+<p>Suggestions: <span id="txtHint"></span></p> 
+<p>First name: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
 
 <script>
-function loadDoc() {
+function showHint(str) {
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
+    document.getElementById("txtHint").innerHTML =
     this.responseText;
   }
-  xhttp.open("GET", "ajax_info.txt");
-  xhttp.send();
+  xhttp.open("GET", "gethint.php?q="+str);
+  xhttp.send();   
 }
 </script>
 
 </body>
 </html>
-
