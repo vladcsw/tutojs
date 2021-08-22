@@ -1,0 +1,26 @@
+*****PROGRAMACION*******
+-optimizar funciones (intentar trabajar con POO)
+-Modo single Player
+-Alertas ganaste
+-Botones de control del juego
+-Que funcionen las 5 manos
+
+********VISUAL*********
+-Acomodar las Manos 
+    -Arreglar tamaños
+    -organizar pngs
+    -organizar tabla
+
+
+********ESTUDIAR*******
+-POO javascript
+-sockets en javascript
+https://es.javascript.info/websocket
+-estudiar css
+https://www.w3schools.com/css/css3_animations.asp
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3
+https://www.w3schools.com/jquery/jquery_animate.asp
+******TRABAJOS FUTUROS*****
+-Cambiar todo a Programacion Orientada a Objetos
+
+-version multijugador con base de datos (TARJETA SIN DINERO)
