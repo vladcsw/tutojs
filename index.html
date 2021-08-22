@@ -5,18 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  
   <title>Juego De Manos</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+<script>
+
+function aizq1() {
+  document.getElementById('c').src='img/mano5.png'
+} 
+
+function aizq2() {
+  document.getElementById('c').src='img/mano4.png'
+} 
+
+function bizq1() {
+  document.getElementById('a').src='img/mano1.png'
+} 
+
+function bder1() {
+  document.getElementById('a').src='img/mano3.png'
+} 
+
+
+</script>
 </head>
 <body>
 <h1 style="text-align:center">AQUI EMPIEZA EL JUEGO DE MANOS</h1>
-  <table style="width:100% align=center border=1px">
+  <table style="width:100%; text-align:center; border:1px">
     <tr>
-      <td><img src="img/mano.png" alt="Girl in a jacket" width="500" height="600"><button>Mano Derecha</button><button>Mano Izquierda</button></td>
-      <td><img src="img/mano1.png" alt="Girl in a jacket" width="500" height="600"><button>Mano Derecha</button><button>Mano Izquierda</button></td>
+      <td><img src="img/manoi.png" alt="Girl in a jacket" width="400" height="500" id="a"><div style="text-align:center;" ><button onclick="aizq1()">Mano Izquierda</button><button onclick="aizq2()">Mano Derecha</button></div></td>
+      <td><img src="img/manoi.png" alt="Girl in a jacket" width="400" height="500" id="b"><div style="text-align:center;" ><button>Mano Izquierda</button><button>Mano Derecha</button></div></td>
     </tr>
     <tr>
-      <td><img src="img/mano2.png" alt="Girl in a jacket" width="500" height="600"><button>Mano Derecha</button><button>Mano Izquierda</button></td>
-      <td><img src="img/mano3.png" alt="Girl in a jacket" width="500" height="600"><button>Mano Derecha</button><button>Mano Izquierda</button></td>
+      <td><img src="img/manoi.png" alt="Girl in a jacket" width="400" height="500" id="c"><div style="text-align:center;" ><button onclick="bizq1()">Mano Derecha</button><button onclick="bder1()">Mano Izquierda</button></div></td>
+      <td><img src="img/manoi.png" alt="Girl in a jacket" width="400" height="500" id="d"><div style="text-align:center;" ><button>Mano Derecha</button><button>Mano Izquierda</button></div></td>
     </tr>
   </table>
 
